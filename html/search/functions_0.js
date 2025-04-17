@@ -28,12 +28,16 @@ var searchData=
   ['_5f_5frealloc_5fhook_25',['__realloc_hook',['https://man7.org/linux/man-pages/man3/__realloc_hook.3',0,'man3']]],
   ['_5f_5fsetfpucw_26',['__setfpucw',['https://man7.org/linux/man-pages/man3/__setfpucw.3',0,'man3']]],
   ['_5fcheck_5fsize_27',['_check_size',['../class_net_parser.html#ae429c75e47f6bbaf839f4817c09ee638',1,'NetParser']]],
-  ['_5fexit_28',['_exit',['https://en.cppreference.com/w/cpp/utility/program/_Exit.html',0,'std::_Exit()'],['https://man7.org/linux/man-pages/man2/_Exit.2',0,'man2::_Exit'],['https://man7.org/linux/man-pages/man2/_exit.2',0,'man2::_exit']]],
+  ['_5fexit_28',['_exit',['https://man7.org/linux/man-pages/man2/_exit.2',0,'man2::_exit()'],['https://en.cppreference.com/w/cpp/utility/program/_Exit.html',0,'std::_Exit()'],['https://man7.org/linux/man-pages/man2/_Exit.2',0,'man2::_Exit()']]],
   ['_5fflushlbf_29',['_flushlbf',['https://man7.org/linux/man-pages/man3/_flushlbf.3',0,'man3']]],
-  ['_5fllseek_30',['_llseek',['https://man7.org/linux/man-pages/man2/_llseek.2',0,'man2']]],
-  ['_5fnewselect_31',['_newselect',['https://man7.org/linux/man-pages/man2/_newselect.2',0,'man2']]],
-  ['_5fparse_5fint_32',['_parse_int',['../class_net_parser.html#a6b5b2bf578869f2e015325803653e428',1,'NetParser']]],
-  ['_5fsyscall_33',['_syscall',['https://man7.org/linux/man-pages/man2/_syscall.2',0,'man2']]],
-  ['_5fsysctl_34',['_sysctl',['https://man7.org/linux/man-pages/man2/_sysctl.2',0,'man2']]],
-  ['_5funparse_5fint_35',['_unparse_int',['../struct_net_unparser.html#a68bf8fd2aa34b01ae3ee570c94fe1557',1,'NetUnparser']]]
+  ['_5finitialize_5ftcp_30',['_initialize_TCP',['../class_t_c_p_sponge_socket.html#ae349b75aff63897d423e7c12595e7288',1,'TCPSpongeSocket']]],
+  ['_5fllseek_31',['_llseek',['https://man7.org/linux/man-pages/man2/_llseek.2',0,'man2']]],
+  ['_5fnewselect_32',['_newselect',['https://man7.org/linux/man-pages/man2/_newselect.2',0,'man2']]],
+  ['_5fparse_5fint_33',['_parse_int',['../class_net_parser.html#a6b5b2bf578869f2e015325803653e428',1,'NetParser']]],
+  ['_5fshould_5fdrop_34',['_should_drop',['../class_lossy_fd_adapter.html#adcc245571bee35d5807a52298d18ddc8',1,'LossyFdAdapter']]],
+  ['_5fsyscall_35',['_syscall',['https://man7.org/linux/man-pages/man2/_syscall.2',0,'man2']]],
+  ['_5fsysctl_36',['_sysctl',['https://man7.org/linux/man-pages/man2/_sysctl.2',0,'man2']]],
+  ['_5ftcp_5floop_37',['_tcp_loop',['../class_t_c_p_sponge_socket.html#adaa000f98e9b72e28576105127f89a30',1,'TCPSpongeSocket']]],
+  ['_5ftcp_5fmain_38',['_tcp_main',['../class_t_c_p_sponge_socket.html#a1a780be26a88bf142dd833f91d6e50ab',1,'TCPSpongeSocket']]],
+  ['_5funparse_5fint_39',['_unparse_int',['../struct_net_unparser.html#a68bf8fd2aa34b01ae3ee570c94fe1557',1,'NetUnparser']]]
 ];

@@ -91,7 +91,7 @@ var searchData=
   ['dremf_88',['dremf',['https://man7.org/linux/man-pages/man3/dremf.3',0,'man3']]],
   ['dreml_89',['dreml',['https://man7.org/linux/man-pages/man3/dreml.3',0,'man3']]],
   ['dsp56k_90',['dsp56k',['https://man7.org/linux/man-pages/man4/dsp56k.4',0,'man4']]],
-  ['dummy_5fcode_91',['DUMMY_CODE',['../tcp__sender_8cc.html#ac2b4ca80a95df9e697c4430ea0063517',1,'tcp_sender.cc']]],
+  ['dummy_5fcode_91',['DUMMY_CODE',['../tcp__connection_8cc.html#ac2b4ca80a95df9e697c4430ea0063517',1,'tcp_connection.cc']]],
   ['dup_92',['dup',['https://man7.org/linux/man-pages/man2/dup.2',0,'man2']]],
   ['dup2_93',['dup2',['https://man7.org/linux/man-pages/man2/dup2.2',0,'man2']]],
   ['dup3_94',['dup3',['https://man7.org/linux/man-pages/man2/dup3.2',0,'man2']]],

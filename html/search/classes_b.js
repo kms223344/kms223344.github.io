@@ -16,5 +16,6 @@ var searchData=
   ['logical_5fand_13',['logical_and',['https://en.cppreference.com/w/cpp/utility/functional/logical_and.html',0,'std']]],
   ['logical_5fnot_14',['logical_not',['https://en.cppreference.com/w/cpp/utility/functional/logical_not.html',0,'std']]],
   ['logical_5for_15',['logical_or',['https://en.cppreference.com/w/cpp/utility/functional/logical_or.html',0,'std']]],
-  ['lognormal_5fdistribution_16',['lognormal_distribution',['https://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]]
+  ['lognormal_5fdistribution_16',['lognormal_distribution',['https://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]],
+  ['lossyfdadapter_17',['LossyFdAdapter',['../class_lossy_fd_adapter.html',1,'']]]
 ];

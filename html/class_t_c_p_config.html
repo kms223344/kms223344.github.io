@@ -104,8 +104,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad22e4e2d008e7227787a1101431b2b18" id="r_ad22e4e2d008e7227787a1101431b2b18"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_config.html#ad22e4e2d008e7227787a1101431b2b18">DEFAULT_CAPACITY</a> = 64000</td></tr>
 <tr class="memdesc:ad22e4e2d008e7227787a1101431b2b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default capacity.  <br /></td></tr>
 <tr class="separator:ad22e4e2d008e7227787a1101431b2b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1f423a90374af756ebf2f67ed62140" id="r_a5a1f423a90374af756ebf2f67ed62140"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_config.html#a5a1f423a90374af756ebf2f67ed62140">MAX_PAYLOAD_SIZE</a> = 1452</td></tr>
-<tr class="memdesc:a5a1f423a90374af756ebf2f67ed62140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max TCP payload that fits in either IPv4 or UDP datagram.  <br /></td></tr>
+<tr class="memitem:a5a1f423a90374af756ebf2f67ed62140" id="r_a5a1f423a90374af756ebf2f67ed62140"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_config.html#a5a1f423a90374af756ebf2f67ed62140">MAX_PAYLOAD_SIZE</a> = 1000</td></tr>
+<tr class="memdesc:a5a1f423a90374af756ebf2f67ed62140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conservative max payload size for real Internet.  <br /></td></tr>
 <tr class="separator:a5a1f423a90374af756ebf2f67ed62140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03da30f1717a4c18930a8bc13bfe80f1" id="r_a03da30f1717a4c18930a8bc13bfe80f1"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_config.html#a03da30f1717a4c18930a8bc13bfe80f1">MAX_RETX_ATTEMPTS</a> = 8</td></tr>
 <tr class="memdesc:a03da30f1717a4c18930a8bc13bfe80f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum re-transmit attempts before giving up.  <br /></td></tr>
@@ -171,7 +171,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t TCPConfig::MAX_PAYLOAD_SIZE = 1452</td>
+          <td class="memname">constexpr size_t TCPConfig::MAX_PAYLOAD_SIZE = 1000</td>
         </tr>
       </table>
   </td>
@@ -181,7 +181,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Max TCP payload that fits in either IPv4 or UDP datagram. </p>
+<p>Conservative max payload size for real Internet. </p>
 
 <p class="definition">Definition at line <a class="el" href="tcp__config_8hh_source.html#l00015">15</a> of file <a class="el" href="tcp__config_8hh_source.html">tcp_config.hh</a>.</p>
 
