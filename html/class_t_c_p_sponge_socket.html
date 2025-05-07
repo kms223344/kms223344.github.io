@@ -74,6 +74,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_t_c_p_sponge_socket-members.html">List of all members</a>  </div>
@@ -91,10 +92,11 @@ Inheritance diagram for TCPSpongeSocket&lt; AdaptT &gt;:</div>
  <div class="center">
   <img src="class_t_c_p_sponge_socket.png" usemap="#TCPSpongeSocket_3C_20AdaptT_20_3E_map" alt=""/>
   <map id="TCPSpongeSocket_3C_20AdaptT_20_3E_map" name="TCPSpongeSocket_3C_20AdaptT_20_3E_map">
-<area href="class_local_stream_socket.html" title="A wrapper around Unix-domain stream sockets." alt="LocalStreamSocket" shape="rect" coords="0,112,181,136"/>
-<area href="class_socket.html" title="Base class for network sockets (TCP, UDP, etc.)" alt="Socket" shape="rect" coords="0,56,181,80"/>
-<area href="class_file_descriptor.html" title="A reference-counted handle to a file descriptor." alt="FileDescriptor" shape="rect" coords="0,0,181,24"/>
+<area href="class_local_stream_socket.html" title="A wrapper around Unix-domain stream sockets." alt="LocalStreamSocket" shape="rect" coords="95,112,276,136"/>
+<area href="class_socket.html" title="Base class for network sockets (TCP, UDP, etc.)" alt="Socket" shape="rect" coords="95,56,276,80"/>
+<area href="class_file_descriptor.html" title="A reference-counted handle to a file descriptor." alt="FileDescriptor" shape="rect" coords="95,0,276,24"/>
 <area href="class_c_s144_t_c_p_socket.html" title="Helper class that makes a TCPOverIPv4SpongeSocket behave more like a (kernel) TCPSocket." alt="CS144TCPSocket" shape="rect" coords="0,224,181,248"/>
+<area href="class_full_stack_socket.html" title="Helper class that makes a TCPOverIPv4overEthernetSpongeSocket behave more like a (kernel) TCPSocket." alt="FullStackSocket" shape="rect" coords="191,224,372,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -218,6 +220,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:accb0ad7fabb89d154e01c07c501f4ea5 inherit pub_methods_class_file_descriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">move assignment is allowed  <br /></td></tr>
 <tr class="separator:accb0ad7fabb89d154e01c07c501f4ea5 inherit pub_methods_class_file_descriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac9db67110f8686d4d0a85f33f0934cd9" id="r_ac9db67110f8686d4d0a85f33f0934cd9"><td class="memItemLeft" align="right" valign="top">AdaptT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html#ac9db67110f8686d4d0a85f33f0934cd9">_datagram_adapter</a></td></tr>
+<tr class="memdesc:ac9db67110f8686d4d0a85f33f0934cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter to underlying datagram socket (e.g., UDP or IP)  <br /></td></tr>
+<tr class="separator:ac9db67110f8686d4d0a85f33f0934cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a6de2d5eddcd6b78f753da35c6e4e6df6" id="r_a6de2d5eddcd6b78f753da35c6e4e6df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html#a6de2d5eddcd6b78f753da35c6e4e6df6">TCPSpongeSocket</a> (<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; <a class="el" href="class_file_descriptor.html">FileDescriptor</a>, <a class="el" href="class_file_descriptor.html">FileDescriptor</a> &gt; data_socket_pair, AdaptT &amp;&amp;datagram_interface)</td></tr>
@@ -238,9 +246,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a30b884a372f0f7cab57541a2ca2d261a" id="r_a30b884a372f0f7cab57541a2ca2d261a"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html#a30b884a372f0f7cab57541a2ca2d261a">_abort</a> {false}</td></tr>
 <tr class="memdesc:a30b884a372f0f7cab57541a2ca2d261a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used by the owner to force the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> thread to shut down.  <br /></td></tr>
 <tr class="separator:a30b884a372f0f7cab57541a2ca2d261a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9db67110f8686d4d0a85f33f0934cd9" id="r_ac9db67110f8686d4d0a85f33f0934cd9"><td class="memItemLeft" align="right" valign="top">AdaptT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html#ac9db67110f8686d4d0a85f33f0934cd9">_datagram_adapter</a></td></tr>
-<tr class="memdesc:ac9db67110f8686d4d0a85f33f0934cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter to underlying datagram socket (e.g., UDP or IP)  <br /></td></tr>
-<tr class="separator:ac9db67110f8686d4d0a85f33f0934cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7179691f87175f38958775f682ab060d" id="r_a7179691f87175f38958775f682ab060d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_event_loop.html">EventLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html#a7179691f87175f38958775f682ab060d">_eventloop</a> {}</td></tr>
 <tr class="memdesc:a7179691f87175f38958775f682ab060d"><td class="mdescLeft">&#160;</td><td class="mdescRight">eventloop that handles all the events (new inbound datagram, new outbound bytes, new inbound bytes)  <br /></td></tr>
 <tr class="separator:a7179691f87175f38958775f682ab060d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,7 +349,7 @@ template&lt;typename AdaptT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00044">44</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00045">45</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -382,7 +387,7 @@ template&lt;typename AdaptT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00175">175</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00176">176</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -405,7 +410,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>When a connected socket is destructed, it will send a RST. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00179">179</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00180">180</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -494,7 +499,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Set up the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> and the event loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00053">53</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00054">54</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -532,7 +537,7 @@ template&lt;typename AdaptT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00024">24</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00025">25</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -563,7 +568,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Main loop of <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00254">254</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00255">255</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -632,7 +637,7 @@ template&lt;typename AdaptT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00205">205</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00206">206</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -673,7 +678,7 @@ template&lt;typename AdaptT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00233">233</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00234">234</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -832,7 +837,7 @@ template&lt;typename AdaptT &gt; </div>
 </div><div class="memdoc">
 <p>Close socket, and wait for <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> to finish </p><dl class="section note"><dt>Note</dt><dd>Calling this function is only advisable if the socket has reached EOF, or else may wait foreever for remote peer to close the TCP connection. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00193">193</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8cc_source.html#l00194">194</a> of file <a class="el" href="tcp__sponge__socket_8cc_source.html">tcp_sponge_socket.cc</a>.</p>
 
 </div>
 </div>
@@ -861,7 +866,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Flag used by the owner to force the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> thread to shut down. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00050">50</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00052">52</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -882,14 +887,14 @@ template&lt;typename AdaptT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Adapter to underlying datagram socket (e.g., UDP or IP) </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00027">27</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00028">28</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -917,7 +922,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>eventloop that handles all the events (new inbound datagram, new outbound bytes, new inbound bytes) </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00036">36</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00038">38</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -945,7 +950,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Has the outbound data been fully acknowledged by the peer? </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00056">56</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00058">58</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -973,7 +978,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Has <a class="el" href="class_t_c_p_sponge_socket.html" title="Multithreaded wrapper around TCPConnection that approximates the Unix sockets API.">TCPSpongeSocket</a> shut down the incoming data to the owner? </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00052">52</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00054">54</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1006,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Has the owner shut down the outbound data to the TCP connection? </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00054">54</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00056">56</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1034,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>TCP state machine. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00033">33</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00035">35</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1062,7 @@ template&lt;typename AdaptT &gt; </div>
 
 <p>Handle to the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> thread; owner thread calls join() in the destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00045">45</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00047">47</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>

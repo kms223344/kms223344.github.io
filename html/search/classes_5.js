@@ -17,9 +17,10 @@ var searchData=
   ['fpos_5ft_14',['fpos_t',['https://en.cppreference.com/w/cpp/io/c.html',0,'std']]],
   ['front_5finsert_5fiterator_15',['front_insert_iterator',['https://en.cppreference.com/w/cpp/iterator/front_insert_iterator.html',0,'std']]],
   ['fstream_16',['fstream',['https://en.cppreference.com/w/cpp/io/basic_fstream.html',0,'std']]],
-  ['function_17',['function',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
-  ['function_3c_20bool_28void_29_3e_18',['function&lt; bool(void)&gt;',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
-  ['function_3c_20void_28void_29_3e_19',['function&lt; void(void)&gt;',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
-  ['future_20',['future',['https://en.cppreference.com/w/cpp/thread/future.html',0,'std']]],
-  ['future_5ferror_21',['future_error',['https://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
+  ['fullstacksocket_17',['FullStackSocket',['../class_full_stack_socket.html',1,'']]],
+  ['function_18',['function',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
+  ['function_3c_20bool_28void_29_3e_19',['function&lt; bool(void)&gt;',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
+  ['function_3c_20void_28void_29_3e_20',['function&lt; void(void)&gt;',['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
+  ['future_21',['future',['https://en.cppreference.com/w/cpp/thread/future.html',0,'std']]],
+  ['future_5ferror_22',['future_error',['https://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
 ];

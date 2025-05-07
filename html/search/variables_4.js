@@ -8,5 +8,5 @@ var searchData=
   ['doff_5',['doff',['../struct_t_c_p_header.html#a19c5c8d0d2506563d6ad6300b7569c7d',1,'TCPHeader']]],
   ['dport_6',['dport',['../struct_t_c_p_header.html#a7e4e1500a6948c1cf27d1bb1cd5b42e9',1,'TCPHeader']]],
   ['dport_5fdflt_7',['DPORT_DFLT',['../tcp__udp_8cc.html#a68c2f61c1f0f11e72ec8e5cf7590b477',1,'tcp_udp.cc']]],
-  ['dst_8',['dst',['../struct_i_pv4_header.html#aa6d1a38c78860c71f7a0aed41055aa44',1,'IPv4Header']]]
+  ['dst_8',['dst',['../struct_ethernet_header.html#aea9d759e2db1f02f99587bbef1185c4e',1,'EthernetHeader::dst'],['../struct_i_pv4_header.html#aa6d1a38c78860c71f7a0aed41055aa44',1,'IPv4Header::dst']]]
 ];

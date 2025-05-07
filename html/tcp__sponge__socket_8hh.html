@@ -86,9 +86,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="eventloop_8hh_source.html">eventloop.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fd__adapter_8hh_source.html">fd_adapter.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="file__descriptor_8hh_source.html">file_descriptor.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="network__interface_8hh_source.html">network_interface.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tcp__config_8hh_source.html">tcp_config.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="tcp__over__ip_8hh_source.html">tcp_over_ip.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tuntap__adapter_8hh_source.html">tuntap_adapter.hh</a>&quot;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
@@ -103,6 +103,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_s144_t_c_p_socket.html">CS144TCPSocket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that makes a TCPOverIPv4SpongeSocket behave more like a (kernel) <a class="el" href="class_t_c_p_socket.html" title="A wrapper around TCP sockets.">TCPSocket</a>.  <a href="class_c_s144_t_c_p_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_stack_socket.html">FullStackSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that makes a TCPOverIPv4overEthernetSpongeSocket behave more like a (kernel) <a class="el" href="class_t_c_p_socket.html" title="A wrapper around TCP sockets.">TCPSocket</a>.  <a href="class_full_stack_socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket&lt; AdaptT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multithreaded wrapper around <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> that approximates the Unix sockets API.  <a href="class_t_c_p_sponge_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +116,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a892f4409861716c62a6454dd1119d135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5912759ace28d3e54336291dd2b537" id="r_a1a5912759ace28d3e54336291dd2b537"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__sponge__socket_8hh.html#a1a5912759ace28d3e54336291dd2b537">LossyTCPOverUDPSpongeSocket</a> = <a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket</a>&lt; <a class="el" href="fd__adapter_8hh.html#aa706ddebfb3e6888ce427d8066c9d05d">LossyTCPOverUDPSocketAdapter</a> &gt;</td></tr>
 <tr class="separator:a1a5912759ace28d3e54336291dd2b537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ce1d8ed599c8bcff5d1a2da4a803d4" id="r_ab5ce1d8ed599c8bcff5d1a2da4a803d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__sponge__socket_8hh.html#ab5ce1d8ed599c8bcff5d1a2da4a803d4">TCPOverIPv4OverEthernetSpongeSocket</a> = <a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket</a>&lt; <a class="el" href="class_t_c_p_over_i_pv4_over_ethernet_adapter.html">TCPOverIPv4OverEthernetAdapter</a> &gt;</td></tr>
+<tr class="separator:ab5ce1d8ed599c8bcff5d1a2da4a803d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2ac050fb06399d315f91c7628c66111" id="r_ab2ac050fb06399d315f91c7628c66111"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__sponge__socket_8hh.html#ab2ac050fb06399d315f91c7628c66111">TCPOverIPv4SpongeSocket</a> = <a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket</a>&lt; <a class="el" href="class_t_c_p_over_i_pv4_over_tun_fd_adapter.html">TCPOverIPv4OverTunFdAdapter</a> &gt;</td></tr>
 <tr class="separator:ab2ac050fb06399d315f91c7628c66111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb595e883ad9abd1e852f9da9801331" id="r_a8eb595e883ad9abd1e852f9da9801331"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__sponge__socket_8hh.html#a8eb595e883ad9abd1e852f9da9801331">TCPOverUDPSpongeSocket</a> = <a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket</a>&lt; <a class="el" href="class_t_c_p_over_u_d_p_socket_adapter.html">TCPOverUDPSocketAdapter</a> &gt;</td></tr>
@@ -131,7 +136,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00100">100</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00104">104</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -147,7 +152,23 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00099">99</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00103">103</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab5ce1d8ed599c8bcff5d1a2da4a803d4" name="ab5ce1d8ed599c8bcff5d1a2da4a803d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ce1d8ed599c8bcff5d1a2da4a803d4">&#9670;&#160;</a></span>TCPOverIPv4OverEthernetSpongeSocket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="tcp__sponge__socket_8hh.html#ab5ce1d8ed599c8bcff5d1a2da4a803d4">TCPOverIPv4OverEthernetSpongeSocket</a> =  <a class="el" href="class_t_c_p_sponge_socket.html">TCPSpongeSocket</a>&lt;<a class="el" href="class_t_c_p_over_i_pv4_over_ethernet_adapter.html">TCPOverIPv4OverEthernetAdapter</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00101">101</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -163,7 +184,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00098">98</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00100">100</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>
@@ -179,7 +200,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00097">97</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__sponge__socket_8hh_source.html#l00099">99</a> of file <a class="el" href="tcp__sponge__socket_8hh_source.html">tcp_sponge_socket.hh</a>.</p>
 
 </div>
 </div>

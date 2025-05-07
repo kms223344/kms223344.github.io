@@ -74,6 +74,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_t_c_p_connection-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TCPConnection Class Reference</div></div>
@@ -148,8 +149,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4404f03f1722ef0d300533833791861" id="r_ae4404f03f1722ef0d300533833791861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_c_p_connection.html">TCPConnection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#ae4404f03f1722ef0d300533833791861">operator=</a> (const <a class="el" href="class_t_c_p_connection.html">TCPConnection</a> &amp;other)=delete</td></tr>
 <tr class="separator:ae4404f03f1722ef0d300533833791861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3f2f577f9d731b763e2ccd1a12986d55" id="r_a3f2f577f9d731b763e2ccd1a12986d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a3f2f577f9d731b763e2ccd1a12986d55">_fill_segments_out</a> ()</td></tr>
+<tr class="separator:a3f2f577f9d731b763e2ccd1a12986d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae5efb4101f684894d3c8b90e98f96c" id="r_a3ae5efb4101f684894d3c8b90e98f96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a3ae5efb4101f684894d3c8b90e98f96c">_rst_segments_out</a> ()</td></tr>
+<tr class="separator:a3ae5efb4101f684894d3c8b90e98f96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a3f73469d2a385547b51604de3030a1c0" id="r_a3f73469d2a385547b51604de3030a1c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a3f73469d2a385547b51604de3030a1c0">_active</a> {true}</td></tr>
+<tr class="separator:a3f73469d2a385547b51604de3030a1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f2e0fa822b1cd33bf736e895c9a6036" id="r_a9f2e0fa822b1cd33bf736e895c9a6036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_c_p_config.html">TCPConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a9f2e0fa822b1cd33bf736e895c9a6036">_cfg</a></td></tr>
 <tr class="separator:a9f2e0fa822b1cd33bf736e895c9a6036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e145cbf554fe66f79a66a413ed66eab" id="r_a6e145cbf554fe66f79a66a413ed66eab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a6e145cbf554fe66f79a66a413ed66eab">_linger_after_streams_finish</a> {true}</td></tr>
@@ -161,11 +171,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a57f98486f8804c9162a9e5578913feb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0eb4ab7a5052371f588be8ed67199a1" id="r_ab0eb4ab7a5052371f588be8ed67199a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_c_p_sender.html">TCPSender</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#ab0eb4ab7a5052371f588be8ed67199a1">_sender</a> {_cfg.send_capacity, _cfg.rt_timeout, _cfg.fixed_isn}</td></tr>
 <tr class="separator:ab0eb4ab7a5052371f588be8ed67199a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222988d973e3c7ecb10be1faada9270e" id="r_a222988d973e3c7ecb10be1faada9270e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_c_p_connection.html#a222988d973e3c7ecb10be1faada9270e">_time_no_received</a> {}</td></tr>
+<tr class="separator:a222988d973e3c7ecb10be1faada9270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A complete endpoint of a TCP connection. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00010">10</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00012">12</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5744dbb7d67407e80743e3485176327d" name="a5744dbb7d67407e80743e3485176327d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5744dbb7d67407e80743e3485176327d">&#9670;&#160;</a></span>TCPConnection() <span class="overload">[1/4]</span></h2>
@@ -193,7 +205,7 @@ Private Attributes</h2></td></tr>
 
 <p>Construct a new connection from a configuration. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00084">84</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00092">92</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -214,7 +226,7 @@ Private Attributes</h2></td></tr>
 
 <p>destructor sends a RST if the connection is still open </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00039">39</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00143">143</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -296,6 +308,60 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f2f577f9d731b763e2ccd1a12986d55" name="a3f2f577f9d731b763e2ccd1a12986d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2f577f9d731b763e2ccd1a12986d55">&#9670;&#160;</a></span>_fill_segments_out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPConnection::_fill_segments_out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00039">39</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+
+</div>
+</div>
+<a id="a3ae5efb4101f684894d3c8b90e98f96c" name="a3ae5efb4101f684894d3c8b90e98f96c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae5efb4101f684894d3c8b90e98f96c">&#9670;&#160;</a></span>_rst_segments_out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPConnection::_rst_segments_out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00023">23</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+
+</div>
+</div>
 <a id="a9e656ec49c94ed7e5f400dff60a4035e" name="a9e656ec49c94ed7e5f400dff60a4035e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e656ec49c94ed7e5f400dff60a4035e">&#9670;&#160;</a></span>active()</h2>
 
@@ -314,7 +380,7 @@ Private Attributes</h2></td></tr>
 <p>Is the connection still alive in any way? </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if either stream is still running or if the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> is lingering after both streams have finished (e.g. to ACK retransmissions from the peer) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00025">25</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00103">103</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -356,7 +422,7 @@ Private Attributes</h2></td></tr>
 
 <p>Initiate a connection by sending a SYN segment. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00037">37</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00138">138</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -377,7 +443,7 @@ Private Attributes</h2></td></tr>
 
 <p>Shut down the outbound byte stream (still allows reading incoming data) </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00035">35</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00132">132</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -406,7 +472,7 @@ Private Attributes</h2></td></tr>
 
 <p>The inbound byte stream received from the peer. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00046">46</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00054">54</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -500,7 +566,7 @@ Private Attributes</h2></td></tr>
 
 <p>Called when a new segment has been received from the network. </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00023">23</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00062">62</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -530,7 +596,7 @@ Private Attributes</h2></td></tr>
 <p>TCPSegments that the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> has enqueued for transmission. </p>
 <dl class="section note"><dt>Note</dt><dd>The owner or operating system will dequeue these and put each one into the payload of a lower-layer datagram (usually Internet datagrams (IP), but could also be user datagrams (UDP) or any other kind). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00075">75</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00083">83</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -557,7 +623,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00059">59</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00067">67</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -585,7 +651,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00033">33</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00117">117</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
@@ -651,11 +717,35 @@ Private Attributes</h2></td></tr>
 <p>Write data to the outbound byte stream, and send it over TCP if possible. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of bytes from <code>data</code> that were actually written. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00027">27</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8cc_source.html#l00105">105</a> of file <a class="el" href="tcp__connection_8cc_source.html">tcp_connection.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f73469d2a385547b51604de3030a1c0" name="a3f73469d2a385547b51604de3030a1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f73469d2a385547b51604de3030a1c0">&#9670;&#160;</a></span>_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPConnection::_active {true}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00029">29</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+
+</div>
+</div>
 <a id="a9f2e0fa822b1cd33bf736e895c9a6036" name="a9f2e0fa822b1cd33bf736e895c9a6036"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f2e0fa822b1cd33bf736e895c9a6036">&#9670;&#160;</a></span>_cfg</h2>
 
@@ -676,7 +766,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00012">12</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00014">14</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -701,7 +791,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Should the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> stay active (and keep ACKing) for 10 * _cfg.rt_timeout milliseconds after both streams have ended, in case the remote <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> doesn't know we've received its whole stream? </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00022">22</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00027">27</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -725,7 +815,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00013">13</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00015">15</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -751,7 +841,7 @@ Private Attributes</h2></td></tr>
 
 <p>outbound queue of segments that the <a class="el" href="class_t_c_p_connection.html" title="A complete endpoint of a TCP connection.">TCPConnection</a> wants sent </p>
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00017">17</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00019">19</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>
@@ -775,7 +865,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00014">14</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00016">16</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
+
+</div>
+</div>
+<a id="a222988d973e3c7ecb10be1faada9270e" name="a222988d973e3c7ecb10be1faada9270e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222988d973e3c7ecb10be1faada9270e">&#9670;&#160;</a></span>_time_no_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t TCPConnection::_time_no_received {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tcp__connection_8hh_source.html#l00030">30</a> of file <a class="el" href="tcp__connection_8hh_source.html">tcp_connection.hh</a>.</p>
 
 </div>
 </div>

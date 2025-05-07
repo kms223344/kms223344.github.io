@@ -6,5 +6,7 @@ var searchData=
   ['portnum_3',['portnum',['../socket__example__1_8cc.html#a00337e371e29dc5bc466819329816781',1,'portnum:&#160;socket_example_1.cc'],['../socket__example__2_8cc.html#a00337e371e29dc5bc466819329816781',1,'portnum:&#160;socket_example_2.cc']]],
   ['proto_4',['proto',['../struct_i_pv4_header.html#a4a366a450d548feaea1fe631c9880b72',1,'IPv4Header']]],
   ['proto_5ftcp_5',['PROTO_TCP',['../struct_i_pv4_header.html#a231ba17e45cbe615dcfec555cabd3b57',1,'IPv4Header']]],
-  ['psh_6',['psh',['../struct_t_c_p_header.html#a1aadb6be1201ded8d4e697c4b12e88e1',1,'TCPHeader']]]
+  ['protocol_5faddress_5fsize_6',['protocol_address_size',['../struct_a_r_p_message.html#a5441c2d08812bb5f013981e6e05af241',1,'ARPMessage']]],
+  ['protocol_5ftype_7',['protocol_type',['../struct_a_r_p_message.html#a54300efe0c104bbe1d5c96b9b7f86252',1,'ARPMessage']]],
+  ['psh_8',['psh',['../struct_t_c_p_header.html#a1aadb6be1201ded8d4e697c4b12e88e1',1,'TCPHeader']]]
 ];
